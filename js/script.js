@@ -22,20 +22,20 @@ const checkMistakes = (array) =>{
     return false;
 };
 const calculateResult = (array) =>{
-    let res = 0;
+    let res = parseInt(array[0]);
     for(let i = 1; i < array.length; i= i + 2){
         switch(array[i]){
             case '+':
-                res = parseInt(array[i-1]) + parseInt(array[i+1]);
+                res += parseInt(array[i+1]);
                 break;
             case '-':
-                res = parseInt(array[i-1]) - parseInt(array[i+1]);
+                res -= parseInt(array[i+1]);
                 break;
             case '*':
-                res = parseInt(array[i-1]) * parseInt(array[i+1]);
+                res *= parseInt(array[i+1]);
                 break;
             case '/':
-                res = parseInt(array[i-1]) / parseInt(array[i+1]);
+                res /= parseInt(array[i+1]);
                 break;
             default:
         }
