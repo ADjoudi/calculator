@@ -74,9 +74,8 @@ btns.forEach((btn)=>{
                     clearEquation();
                 }
                 break;
-            case 'Del':
-                    equation.pop();
-                    updateEquation();
+            case 'Cle':
+                    clearEquation();
                     break;
             default:
                 if(equation.length == 0){
