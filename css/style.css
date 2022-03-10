@@ -34,8 +34,8 @@ body{
 ////////////////////*/
 
 .border{
-    min-width: 418px;
-    min-height: 112px;
+    width: 418px;
+    height: 112px;
     background: #E3EDF7;
     box-shadow: inset -3px -3px 2px rgba(136, 165, 191, 0.38) , inset 2px 2px 2px #FFFFFF;
     box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48);
@@ -46,18 +46,25 @@ body{
     align-items: start;
 }
 .box{
-    min-width: 410px;
-    min-height: 98.62px;
+    width: 410px;
+    height: 98.62px;
     background: #E3EDF7;
     box-shadow: inset -3px -3px 7px #FFFFFF, inset 2px 2px 5px rgba(136, 165, 191, 0.38);
     border-radius: 16px;
     margin-top: 4px;
-    padding: 2px 8px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
 }
 .box p{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    color: rgb(68, 67, 67);
+    height:2em;
+    margin: 0%;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(104, 104, 104);
     
 }
 .box .result{
@@ -92,6 +99,10 @@ body{
     justify-content: start;
     align-items: center;
 }
+.delete{
+    justify-content: center;
+    padding-left: 0;
+}
 
 .click{
     width: 100%;
@@ -107,6 +118,7 @@ body{
     font-weight: normal;
     font-size: 48px;
     color:rgba(72, 100, 125, 0.712);
+    user-select: none;
 }
 
 
